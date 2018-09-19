@@ -38,10 +38,6 @@
 		<div class="tag_list">
 			<ul id="tag-list">
 				<li><a href="/"><img src="/assets/img/disk.png" />(C:)</a>
-
-					{% if page.title == 'me' or page.title == 'random' or page.title == 'blog' or page.title == 'dev' or page.title ==
-					'404...' %}
-
 					<ul>
 						{% assign tags = site.tags | sort %}
 						{% for tag in tags %}
@@ -49,8 +45,6 @@
 								tag[0] | replace:'-', ' ' }}</a></li>
 						{% endfor %}
 					</ul>
-					{% endif %}
-
 				</li>
 			</ul>
 		</div>
@@ -68,9 +62,9 @@
 			{% endif %}
 			{% else %}
 			<ul>
-				{% for tag in tags %}
-				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/file.ico"
-						 title="{{ tag[0] | replace:'-', ' ' }}" />{{ tag[0] | replace:'-', ' ' }}</a></li>
+				{% for post in site.posts %}
+				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{
+						post.title }}</a></li>
 				{% endfor %}
 			</ul>
 			{% endunless %}
