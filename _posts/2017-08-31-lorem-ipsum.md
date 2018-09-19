@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Hello world!"
-tags: blog random development
+tags: blog random dev
 ---
 
 ## Lorem Ipsum
