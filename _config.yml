@@ -1,10 +1,10 @@
 permalink: /:year:month:day/:title
-url: #Your url here
+url: https://josh-tf.github.io/
 baseurl: /project
 
 # variables
-name: Your Site Name
-description: Your description here
+name: josh-tf | personal website
+description: Developer, Analyst and Nerd from Melbourne, AU
 google_verification: null
 
 
