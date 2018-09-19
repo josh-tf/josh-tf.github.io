@@ -58,9 +58,9 @@
 			{% unless page.date%}
 			{% if page.title == 'me' or page.title == '404...' %}
 			<ul>
-				{% for tag in tags %}
-				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/file.ico"
-						 title="{{ tag[0] | replace:'-', ' ' }}" />{{ tag[0] | replace:'-', ' ' }}</a></li>
+				{% for post in site.posts %}
+				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{
+						post.title }}</a></li>
 				{% endfor %}
 			</ul>
 			{% else %}
@@ -68,9 +68,9 @@
 			{% endif %}
 			{% else %}
 			<ul>
-				{% for post in site.posts %}
-				<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{
-						post.title }}</a></li>
+				{% for tag in tags %}
+				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/file.ico"
+						 title="{{ tag[0] | replace:'-', ' ' }}" />{{ tag[0] | replace:'-', ' ' }}</a></li>
 				{% endfor %}
 			</ul>
 			{% endunless %}
