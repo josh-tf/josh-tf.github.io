@@ -24,4 +24,11 @@ kramdown:
   syntax_highlighter_opts:
     disable : true
 
-#tag for change
+repository: josh-tf/josh-tf.github.io
+
+gems:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
