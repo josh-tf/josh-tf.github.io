@@ -52,9 +52,6 @@
 			{% unless page.date%}
 			{% if page.title == 'me' or page.title == '404...' %}
 			<ul>
-
-
-				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/file.ico"
 						 title="{{ tag[0] | replace:'-', ' ' }}" />{{ tag[0] | replace:'-', ' ' }}</a></li>
