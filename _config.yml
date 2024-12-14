@@ -3,3 +3,5 @@ description: 'Simple Site'
 baseurl: ''
 url: 'https://josh-tf.github.io'
 markdown: kramdown
+include:
+  - .well-known
