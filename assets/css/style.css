@@ -24,22 +24,26 @@ a {
   color: #b0b0b0;
   text-decoration: none;
   margin: 0 0.5rem;
-}
-
-a:hover {
-  text-decoration: underline;
+  transition: 0.9s;
 }
 
 .separator {
   margin: 0 0.1rem;
 }
 
-/* Optional: Add styling for "letters" text */
 i {
   font-style: italic;
 }
 
-/* Optional: Add specific styles for the lambda character */
 b {
   font-weight: bold;
+}
+
+.dot {
+  transition: 0.9s;
+}
+
+.dot:hover,
+a:hover {
+  color: #52ff9e;
 }
