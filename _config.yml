@@ -1,0 +1,5 @@
+title: 'josh.tf'
+description: 'Simple Site'
+baseurl: ''
+url: 'https://josh-tf.github.io'
+markdown: kramdown
