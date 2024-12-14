@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'josh-(dot)-tf'
+title: 'josh-tf'
 ---
 
 # josh (dot) tf
